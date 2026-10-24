@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Jessica Hencken — beleza, autocuidado e bem-estar." />
+    <meta name="theme-color" content="#fff7f3" />
+    <title>Jessica Hencken | Personal Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="profile-card" aria-labelledby="profile-name">
+        <div class="portrait-ring">
+          <img class="portrait" src="assets/jessica.jpg" alt="Jessica Hencken" width="320" height="320" />
+        </div>
+
+        <header class="profile-header">
+          <p class="eyebrow">Beleza · Autocuidado · Bem-estar</p>
+          <h1 id="profile-name">Jessica Hencken</h1>
+          <p class="tagline">Cuidando da sua beleza &amp; bem-estar</p>
+        </header>
+
+        <p class="intro">
+          Olá! Sou especialista em autocuidado e bem-estar. Minha missão é ajudar você a realçar sua beleza natural e elevar sua autoestima com produtos e tratamentos personalizados.
+        </p>
+
+        <nav class="links" aria-label="Links de Jessica Hencken">
+          <a class="link-button link-button--soft" href="produtos.html">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" /></svg>
+            <span>Catálogo de Produtos</span>
+          </a>
+
+          <a class="link-button link-button--outline" href="https://wa.me/5547999201088?text=Ol%C3%A1%2C%20Jessica!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4Z" /></svg>
+            <span>Agende seu Atendimento</span>
+          </a>
+
+          <a class="link-button link-button--primary" href="https://instagram.com/jessica.hencken" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle class="icon-dot" cx="17.4" cy="6.7" r="1" /></svg>
+            <span>Me siga no Instagram</span>
+          </a>
+        </nav>
+
+        <footer>© <span id="year">2026</span> · Jessica Personal Care</footer>
+      </section>
+    </main>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>

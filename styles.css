@@ -60,19 +60,20 @@ body::after { bottom: -130px; left: -80px; }
   backdrop-filter: blur(16px);
 }
 
-.home-card { overflow: hidden; }
+.home-card {
+  overflow: hidden;
+  padding: 0 34px 28px;
+}
 
-.home-card::before {
-  position: absolute;
-  inset: 0 0 auto;
-  height: 352px;
+.profile-top {
+  margin: 0 -34px 26px;
+  padding: 42px 34px 28px;
   background:
     radial-gradient(circle at 18% 5%, rgba(255, 181, 190, 0.28), transparent 45%),
     linear-gradient(135deg, rgba(255, 225, 226, 0.72), rgba(255, 239, 218, 0.62));
-  content: "";
 }
 
-.home-card > * { position: relative; }
+.profile-top .intro { margin-bottom: 0; }
 
 .portrait-ring,
 .mini-portrait-ring {
@@ -254,11 +255,12 @@ footer {
 @media (max-width: 520px) {
   .page-shell { padding: 18px 12px; }
   .profile-card { padding: 34px 22px 24px; border-radius: 26px; }
+  .home-card { padding: 0 22px 24px; }
+  .profile-top { margin: 0 -22px 24px; padding: 34px 22px 26px; }
   .portrait-ring { width: 154px; height: 154px; }
   .portrait { width: 144px; height: 144px; }
   .intro { font-size: 0.84rem; }
   .back-link { top: 20px; left: 20px; }
-  .home-card::before { height: 335px; }
   .catalog-card { padding: 68px 17px 22px; }
   .product-card { grid-template-columns: 60px minmax(0, 1fr) auto; gap: 12px; }
   .product-card img { width: 60px; height: 60px; }
